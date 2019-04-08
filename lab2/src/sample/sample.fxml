@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="719.0" style="-fx-background-color: #20120F;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="360.0" layoutY="36.0" prefHeight="429.0" prefWidth="311.0" style="-fx-background-color: #9C2B27;">
+         <children>
+            <Accordion prefHeight="429.0" prefWidth="311.0" style="-fx-background-color: #9C2B27;">
+              <panes>
+                <TitledPane animated="false" style="-fx-animated: #9C2B27;" text="Dane Osobowe">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #9C2B27;">
+                           <children>
+                              <TextField layoutX="80.0" layoutY="59.0" promptText="Imie">
+                                 <effect>
+                                    <Lighting>
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                       <light>
+                                          <Light.Distant />
+                                       </light>
+                                    </Lighting>
+                                 </effect>
+                              </TextField>
+                              <TextField layoutX="80.0" layoutY="142.0" promptText="Nazwisko">
+                                 <effect>
+                                    <Lighting>
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                       <light>
+                                          <Light.Distant />
+                                       </light>
+                                    </Lighting>
+                                 </effect>
+                              </TextField>
+                              <TextField layoutX="80.0" layoutY="217.0" promptText="Stanowisko">
+                                 <effect>
+                                    <Lighting>
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                       <light>
+                                          <Light.Distant />
+                                       </light>
+                                    </Lighting>
+                                 </effect>
+                              </TextField>
+                              <RadioButton layoutX="27.0" layoutY="297.0" mnemonicParsing="false" text="Mężczyzna">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="plec" />
+                                 </toggleGroup>
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </RadioButton>
+                              <RadioButton layoutX="188.0" layoutY="297.0" mnemonicParsing="false" text="Kobieta" toggleGroup="$plec">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></RadioButton>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </TitledPane>
+                <TitledPane animated="false" style="-fx-background-color: #9C2B27;" text="Dane Rejestracyjne">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #9C2B27;">
+                           <children>
+                              <TextField layoutX="80.0" layoutY="58.0" promptText="Email">
+                                 <effect>
+                                    <Lighting>
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                       <light>
+                                          <Light.Distant />
+                                       </light>
+                                    </Lighting>
+                                 </effect>
+                              </TextField>
+                              <TextField layoutX="80.0" layoutY="125.0" promptText="Login">
+                                 <effect>
+                                    <Lighting>
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                       <light>
+                                          <Light.Distant />
+                                       </light>
+                                    </Lighting>
+                                 </effect>
+                              </TextField>
+                              <TextField layoutX="80.0" layoutY="198.0" promptText="Hasło">
+                                 <effect>
+                                    <Lighting>
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                       <light>
+                                          <Light.Distant />
+                                       </light>
+                                    </Lighting>
+                                 </effect>
+                              </TextField>
+                              <TextField layoutX="80.0" layoutY="272.0" promptText="Powtórz Hasło">
+                                 <effect>
+                                    <Lighting>
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                       <light>
+                                          <Light.Distant />
+                                       </light>
+                                    </Lighting>
+                                 </effect>
+                              </TextField>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </TitledPane>
+              </panes>
+            </Accordion>
+         </children></AnchorPane>
+      <Button layoutX="45.0" layoutY="251.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="275.0" text="Rejestracja">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Label layoutX="45.0" layoutY="92.0" lineSpacing="2.0" prefHeight="84.0" prefWidth="311.0" text="Wypełnij wszystkie pola, a następnie naciśnij &#10;&#10;przycisk &quot;Rejestracja&quot;" textFill="#cdafaf">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
